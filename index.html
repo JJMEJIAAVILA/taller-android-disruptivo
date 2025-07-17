@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Taller Android Disruptivo 💡</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='14' font-size='16'%3E🤖%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Taller: Explorando Android y Tecnologías Disruptivas 🚀</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio" data-section="inicio">Inicio 👋</a></li>
+                <li><a href="#que-es-android" data-section="que-es-android">¿Qué es Android? 🤖</a></li>
+                <li><a href="#apk-definition" data-section="apk-definition">Concepto de APK 📦</a></li>
+                <li><a href="#android-sdk" data-section="android-sdk">Android SDK 🛠️</a></li>
+                <li><a href="#lenguaje-desarrollo" data-section="lenguaje-desarrollo">Lenguaje de Desarrollo ✍️</a></li>
+                <li><a href="#ides-desarrollo" data-section="ides-desarrollo">IDEs de Desarrollo 💻</a></li>
+                <li><a href="#android-multiuser" data-section="android-multiuser">Android Multiusuario 👨‍👩‍👧‍👦</a></li>
+                <li><a href="#minimo-privilegio" data-section="minimo-privilegio">Mínimo Privilegio 🛡️</a></li>
+                <li><a href="#componentes-esenciales" data-section="componentes-esenciales">Componentes Esenciales 🧩</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        <section id="inicio" class="workshop-section active presentacion-section">
+            <h2>¡Bienvenidos al Taller Android Disruptivo! 💡</h2>
+            <div class="presentacion-content">
+                <div class="text-content">
+                    <p>Prepárense para sumergirse en el fascinante mundo de <strong>Android</strong> y explorar cómo las <strong>tecnologías emergentes y disruptivas</strong> están redefiniendo el panorama del desarrollo móvil.</p>
+                    <p>En este taller, desglosaremos los conceptos esenciales y fundamentales que todo entusiasta o futuro desarrollador debe conocer para construir aplicaciones innovadoras y seguras.</p>
+                    <h3>Datos del Aprendiz 🧑‍💻</h3>
+                    <ul>
+                        <li><strong>Aprendiz:</strong> Jhon Jairo Mejía Ávila ✨</li>
+                        <li><strong>Programa:</strong> Análisis y Desarrollo de Software 🖥️</li>
+                        <li><strong>Ficha:</strong> 2885525 🎯</li>
+                    </ul>
+                    <p>¡Espero que disfruten y aprendan mucho! Vamos a descubrir el poder de Android juntos. 🚀</p>
+                </div>
+                <div class="photo-container">
+                    <img src="images/jhon-jairo.jpg" alt="Foto de Jhon Jairo Mejía Ávila" class="profile-photo">
+                    <p class="photo-caption">¡Jhon Jairo Mejia Avila les da la bienvenida! 😊</p>
+                </div>
+            </div>
+            <div class="navigation-buttons">
+                <button id="start-workshop-btn" class="main-button">Comenzar Taller ▶️</button>
+            </div>
+        </section>
+
+        <section id="que-es-android" class="workshop-section">
+            <h2>¿Qué es Android? 🤖</h2>
+            <p><strong>Android</strong> es un sistema operativo móvil de código abierto, basado en el kernel de Linux y desarrollado por Google. Es la plataforma móvil más utilizada a nivel mundial, presente en miles de millones de teléfonos inteligentes, tabletas, televisores y más.</p>
+            <p>Su "naturaleza de código abierto" permite a los fabricantes de dispositivos modificar y personalizar el sistema, lo que ha impulsado su adopción masiva y la creación de un ecosistema diverso.</p>
+            <h3>Características clave de Android:</h3>
+            <ul>
+                <li><strong>Flexibilidad y Adaptabilidad:</strong> Se adapta a una amplia gama de dispositivos y tamaños de pantalla.</li>
+                <li><strong>Ecosistema de Aplicaciones Gigante:</strong> Con Google Play Store y millones de aplicaciones disponibles.</li>
+                <li><strong>Multitarea Eficiente:</strong> Permite ejecutar múltiples aplicaciones simultáneamente.</li>
+                <li><strong>Soporte para Hardware Diverso:</strong> Compatible con cámaras, GPS, sensores, NFC, y más.</li>
+                <li><strong>Actualizaciones Constantes:</strong> Google lanza nuevas versiones periódicamente con mejoras de seguridad y nuevas funcionalidades.</li>
+            </ul>
+            <p>Desde la comunicación diaria hasta la productividad y el entretenimiento, Android es el **motor detrás de gran parte de nuestra vida digital**. ¡Es una plataforma increíblemente versátil y potente! ✨</p>
+            <div class="navigation-buttons">
+                <button class="main-button prev-btn" data-target-section="inicio">◀️ Anterior</button>
+                <button class="main-button next-btn" data-target-section="apk-definition">Siguiente ▶️</button>
+            </div>
+        </section>
+
+        <section id="apk-definition" class="workshop-section">
+            <h2>Definición del Concepto de APK 📦</h2>
+            <p>El término "APK" significa "Android Package Kit" en inglés. Es el formato de archivo de paquete estándar utilizado por el sistema operativo Android para la distribución e instalación de aplicaciones móviles. Piensa en un archivo APK como el equivalente a un archivo `.exe` en Windows o un `.dmg` en macOS, pero para el mundo Android.</p>
+            <p>Cada archivo APK es un paquete comprimido que contiene todos los elementos necesarios para que una aplicación se instale y funcione correctamente en un dispositivo Android. Esto incluye:</p>
+            <ul>
+                <li><strong>Código compilado de la aplicación:</strong> Los archivos `.dex` (Dalvik Executable) que contienen el código ejecutable.</li>
+                <li><strong>Recursos:</strong> Imágenes, sonidos, archivos de diseño XML para la interfaz de usuario, y otros activos.</li>
+                <li><strong>Certificado de manifiesto:</strong> Un archivo `AndroidManifest.xml` que describe la estructura de la aplicación, sus componentes, permisos requeridos, y más.</li>
+                <li><strong>Archivos de recursos y activos adicionales.</strong></li>
+            </ul>
+            <p>Cuando descargas una aplicación desde Google Play Store o desde una fuente externa (sideloading), lo que tu dispositivo instala es, en última instancia, un archivo APK. ¡Es la unidad fundamental para empaquetar y desplegar aplicaciones Android! 🚀</p>
+            <div class="navigation-buttons">
+                <button class="main-button prev-btn" data-target-section="que-es-android">◀️ Anterior</button>
+                <button class="main-button next-btn" data-target-section="android-sdk">Siguiente ▶️</button>
+            </div>
+        </section>
+
+        <section id="android-sdk" class="workshop-section">
+            <h2>¿Qué es el Android SDK? 🛠️</h2>
+            <p>El "Android SDK (Software Development Kit)" o "Kit de Desarrollo de Android", es un conjunto exhaustivo de herramientas y bibliotecas que Google proporciona a los desarrolladores. Es absolutamente esencial para construir, depurar y probar aplicaciones para la plataforma Android.</p>
+            <p>Sin el SDK, el desarrollo de aplicaciones nativas de Android sería extremadamente complejo o casi imposible. Incluye varios componentes cruciales:</p>
+            <ul>
+                <li><strong>Herramientas de Construcción (Build Tools):</strong> Utilidades para compilar tu código en archivos APK, empaquetar recursos y firmar la aplicación.</li>
+                <li><strong>Plataformas Android (Android Platforms):</strong> Versiones específicas de la API de Android que te permiten desarrollar para diferentes niveles del sistema operativo.</li>
+                <li><strong>Emulador de Android:</strong> Un entorno virtual que simula dispositivos Android, permitiéndote probar tus aplicaciones en una variedad de configuraciones de hardware y versiones de Android sin necesidad de un dispositivo físico.</li>
+                <li><strong>SDK Tools:</strong> Herramientas de depuración, gestión de dispositivos, y otras utilidades para optimizar tu flujo de trabajo.</li>
+                <li><strong>Documentación y Ejemplos:</strong> Guías detalladas, referencias de API y ejemplos de código para ayudar a los desarrolladores.</li>
+            </ul>
+            <p>Piensa en el Android SDK como la "caja de herramientas completa" que te equipa con todo lo necesario para dar vida a tus ideas de aplicaciones Android, desde el concepto hasta la implementación y las pruebas. ¡Es tu compañero indispensable en el viaje del desarrollo móvil! ⚙️</p>
+            <div class="navigation-buttons">
+                <button class="main-button prev-btn" data-target-section="apk-definition">◀️ Anterior</button>
+                <button class="main-button next-btn" data-target-section="lenguaje-desarrollo">Siguiente ▶️</button>
+            </div>
+        </section>
+
+        <section id="lenguaje-desarrollo" class="workshop-section">
+            <h2>Lenguaje para Desarrollo de Aplicaciones Android ✍️</h2>
+            <p>Históricamente, el lenguaje principal para desarrollar aplicaciones Android fue "Java". Sin embargo, en 2019, Google anunció que "Kotlin" se convertiría en el lenguaje preferido y el lenguaje primario para el desarrollo de aplicaciones Android.</p>
+            <p>Ambos lenguajes son completamente compatibles y se utilizan ampliamente en el ecosistema Android, y la mayoría de los desarrolladores trabajan con ambos:</p>
+            <ul>
+                <li>
+                    <strong>Java:</strong> Un lenguaje de programación orientado a objetos, robusto, maduro y con una vasta comunidad. Es la base de muchas aplicaciones Android existentes y sigue siendo muy relevante. Su sintaxis puede ser más verbosa.
+                </li>
+                <li>
+                    <strong>Kotlin:</strong> Un lenguaje moderno, conciso y pragmático que también se ejecuta en la Máquina Virtual de Java (JVM). Kotlin está diseñado para ser interoperable con Java y ofrece características que mejoran la productividad, como seguridad nula (para evitar errores `NullPointerException`), expresiones más concisas y soporte para programación funcional.
+                </li>
+            </ul>
+            <p>Mientras que "Kotlin es la elección recomendada" por Google para los nuevos proyectos debido a sus beneficios en productividad y seguridad, conocer Java sigue siendo valioso, especialmente para mantener o expandir aplicaciones heredadas. ¡La elección entre ellos (o la combinación de ambos) dependerá de las necesidades del proyecto! 🌟</p>
+            <div class="navigation-buttons">
+                <button class="main-button prev-btn" data-target-section="android-sdk">◀️ Anterior</button>
+                <button class="main-button next-btn" data-target-section="ides-desarrollo">Siguiente ▶️</button>
+            </div>
+        </section>
+
+        <section id="ides-desarrollo" class="workshop-section">
+            <h2>IDEs de Desarrollo para Android 💻</h2>
+            <p>Un "IDE (Integrated Development Environment)" o "Entorno de Desarrollo Integrado", es una aplicación de software que proporciona un conjunto integral de herramientas a los programadores para el desarrollo de software. Para el desarrollo de aplicaciones Android, el IDE más prominente y recomendado es:</p>
+            <ul>
+                <li>
+                    <strong>Android Studio:</strong>
+                    <p>Es el "IDE oficial de Google" para el desarrollo de aplicaciones Android. Está basado en la plataforma IntelliJ IDEA y ofrece una amplia gama de características diseñadas específicamente para el ecosistema Android.</p>
+                    <p>Características destacadas:</p>
+                    <ul>
+                        <li>Editor de Código Inteligente: Con autocompletado avanzado, refactorización y análisis estático.</li>
+                        <li>Diseñador de Diseño Visual (Layout Editor): Permite construir interfaces de usuario arrastrando y soltando elementos.</li>
+                        <li>Emulador de Android Integrado: Para probar aplicaciones en una variedad de configuraciones de dispositivos.</li>
+                        <li>Herramientas de Depuración y Rendimiento: Para identificar y solucionar problemas en el código y optimizar el rendimiento de la aplicación.</li>
+                        <li>Integración con Gradle: El sistema de compilación oficial para Android.</li>
+                        <li>Soporte nativo para Kotlin y Java.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Aunque Android Studio es el estándar de la industria, algunos desarrolladores pueden usar otros entornos para el desarrollo móvil híbrido o multiplataforma que también puede apuntar a Android:</p>
+            <ul>
+                <li>
+                    <strong>Visual Studio Code:</strong> Con extensiones como Flutter o React Native, se puede desarrollar aplicaciones Android, aunque no son nativas de Android per se.
+                </li>
+                <li>
+                    <strong>IntelliJ IDEA (Community Edition):</strong> Aunque es la base de Android Studio, no incluye todas las herramientas específicas de Android de forma predeterminada.
+                </li>
+            </ul>
+            <p>Para un desarrollo Android nativo y profesional, "Android Studio es la elección indiscutible" y la herramienta con la que pasarás la mayor parte de tu tiempo. 🚀</p>
+            <div class="navigation-buttons">
+                <button class="main-button prev-btn" data-target-section="lenguaje-desarrollo">◀️ Anterior</button>
+                <button class="main-button next-btn" data-target-section="android-multiuser">Siguiente ▶️</button>
+            </div>
+        </section>
+
+        <section id="android-multiuser" class="workshop-section">
+            <h2>Android Multiusuario: Compartiendo con Seguridad 👨‍👩‍👧‍👦</h2>
+            <p>El concepto de "Android Multiusuario" permite que múltiples personas compartan un mismo dispositivo Android, como un teléfono o una tableta, mientras mantienen sus propias configuraciones, datos y aplicaciones de forma separada y segura. Esta característica es increíblemente útil en entornos compartidos, como familias, escuelas o empresas.</p>
+            <p>Cada usuario en un dispositivo Android multiusuario tiene su propio espacio de trabajo, lo que significa que:</p>
+            <ul>
+                <li><strong>Aplicaciones:</strong> Las aplicaciones instaladas por un usuario no son visibles por defecto para otros usuarios, y sus datos de aplicación son independientes.</li>
+                <li><strong>Datos Personales:</strong> Documentos, fotos, videos, contactos y mensajes son privados para cada perfil de usuario.</li>
+                <li><strong>Cuentas:</strong> Las cuentas de Google y otras cuentas de aplicaciones están vinculadas a cada perfil individualmente, no al dispositivo globalmente.</li>
+                <li><strong>Configuraciones:</strong> Cada usuario puede personalizar su fondo de pantalla, idioma, ajustes de red, etc., sin afectar a los demás.</li>
+            </ul>
+            <h3>Tipos Comunes de Usuarios:</h3>
+            <ul>
+                <li><strong>Propietario:</strong> Es el usuario principal del dispositivo, con control total sobre este y la capacidad de añadir o eliminar otros usuarios.</li>
+                <li><strong>Invitado:</strong> Un perfil temporal ideal para uso ocasional. Los datos de la sesión de invitado se pueden borrar fácilmente al finalizar.</li>
+                <li><strong>Usuarios Estándar:</strong> Perfiles permanentes para personas que usarán el dispositivo con regularidad, como miembros de la familia.</li>
+                <li><strong>Usuarios Restringidos (en tabletas):</strong> Permiten al propietario limitar el acceso a ciertas aplicaciones o contenidos, ideal para niños o quioscos.</li>
+            </ul>
+            <p>Esta funcionalidad mejora significativamente la "privacidad y la organización" de dispositivos Android, permitiendo que un solo dispositivo sirva a las necesidades individuales de múltiples personas de manera eficiente. 🌐</p>
+            <div class="navigation-buttons">
+                <button class="main-button prev-btn" data-target-section="ides-desarrollo">◀️ Anterior</button>
+                <button class="main-button next-btn" data-target-section="minimo-privilegio">Siguiente ▶️</button>
+            </div>
+        </section>
+
+        <section id="minimo-privilegio" class="workshop-section">
+            <h2>Concepto de Mínimo Privilegio en Android 🛡️</h2>
+            <p>El principio de "Mínimo Privilegio" (Least Privilege), es una piedra angular de la seguridad informática, y su aplicación es fundamental en el diseño de Android. Este concepto dicta que a cualquier entidad (un usuario, un proceso, o en nuestro caso, una aplicación) se le deben otorgar solo los permisos y recursos mínimos indispensables para realizar su función designada, y nada más.</p>
+            <p>En el contexto de Android, esto se manifiesta de varias maneras:</p>
+            <ul>
+                <li><strong>Permisos de Aplicación:</strong> Las aplicaciones deben solicitar solo aquellos permisos que son estrictamente necesarios para su operación. Por ejemplo, una aplicación de calculadora no debería pedir permiso para acceder a tus contactos o tu ubicación. Los usuarios tienen la capacidad de otorgar o denegar estos permisos en tiempo de ejecución (a partir de Android 6.0 Marshmallow).</li>
+                <li><strong>Sandboxing de Aplicaciones:</strong> Android aísla cada aplicación en su propio "sandbox" de seguridad. Cada aplicación se ejecuta con su propio ID de usuario (UID) de Linux y su propio proceso, lo que significa que una aplicación no puede, por defecto, acceder a los datos o recursos de otra aplicación. Esto previene que una aplicación maliciosa cause daño a otras partes del sistema o robe información de otras apps.</li>
+                <li><strong>Acceso Limitado a Recursos del Sistema:</strong> Las aplicaciones no tienen acceso irrestricto al sistema operativo o al hardware del dispositivo. Cualquier interacción con funciones sensibles (como la cámara, el micrófono, el GPS o la conectividad de red) requiere un permiso explícito.</li>
+            </ul>
+            <p>Los beneficios de aplicar el principio de mínimo privilegio en Android son significativos:</p>
+            <ul>
+                <li><strong>Seguridad Mejorada:</strong> Reduce la superficie de ataque y limita el daño potencial si una aplicación es comprometida o contiene vulnerabilidades.</li>
+                <li><strong>Protección de la Privacidad:</strong> Salvaguarda la información sensible del usuario al restringir el acceso no autorizado.</li>
+                <li><strong>Estabilidad del Sistema:</strong> Evita que las aplicaciones mal diseñadas o maliciosas interfieran con el funcionamiento de otras aplicaciones o del propio sistema operativo.</li>
+            </ul>
+            <p>Es un principio clave para mantener la robustez y la confianza en la plataforma Android. ¡Menos es más cuando se trata de permisos y seguridad! 🔐</p>
+            <div class="navigation-buttons">
+                <button class="main-button prev-btn" data-target-section="android-multiuser">◀️ Anterior</button>
+                <button class="main-button next-btn" data-target-section="componentes-esenciales">Siguiente ▶️</button>
+            </div>
+        </section>
+
+        <section id="componentes-esenciales" class="workshop-section">
+            <h2>Componentes Esenciales de una Aplicación Android 🧩</h2>
+            <p>Las aplicaciones Android están construidas sobre bloques de construcción fundamentales, conocidos como **componentes esenciales**. Cada tipo de componente tiene un propósito específico y un ciclo de vida definido que es gestionado por el sistema operativo Android. Comprenderlos es crucial para diseñar y construir aplicaciones robustas.</p>
+            <p>Los cuatro componentes principales son:</p>
+            <ol>
+                <li>
+                    <strong>Activities (Actividades):</strong>
+                    <p>Una "Activity" representa una única pantalla con una interfaz de usuario con la que el usuario puede interactuar. Es el punto de entrada más común para el usuario a una aplicación. Por ejemplo, una pantalla de inicio de sesión, la visualización de una lista de contactos o la ventana de redacción de un correo electrónico son Activities. Una aplicación suele tener múltiples Activities, y el usuario puede navegar entre ellas. 📱</p>
+                </li>
+                <li>
+                    <strong>Services (Servicios):</strong>
+                    <p>Un "Service" es un componente que se ejecuta en segundo plano para realizar operaciones de larga duración sin proporcionar una interfaz de usuario. Son ideales para tareas que no requieren interacción directa del usuario, como reproducir música en segundo plano, descargar datos de la red o realizar operaciones de base de datos. Los servicios pueden continuar ejecutándose incluso si el usuario cambia a otra aplicación. 🎶</p>
+                </li>
+                <li>
+                    <strong>Broadcast Receivers (Receptores de Difusión):</strong>
+                    <p>Un "Broadcast Receiver" es un componente que permite a la aplicación responder a mensajes de difusión (broadcasts) enviados por el sistema Android o por otras aplicaciones. Estos mensajes pueden indicar eventos del sistema, como batería baja, SMS recibido, una llamada entrante o un cambio en la conectividad de la red. Los Broadcast Receivers no tienen interfaz de usuario. 📡</p>
+                </li>
+                <li>
+                    <strong>Content Providers (Proveedores de Contenido):</strong>
+                    <p>Un "Content Provider" gestiona el acceso a un conjunto estructurado de datos. Proporciona una forma segura y estandarizada para que diferentes aplicaciones puedan acceder a datos compartidos entre ellas o persistir datos propios. Por ejemplo, la aplicación de Contactos de Android expone sus datos a través de un Content Provider, permitiendo que otras aplicaciones accedan (con el permiso adecuado) a la lista de contactos del usuario. 💾</p>
+                </li>
+            </ol>
+            <p>Estos componentes son los "ladrillos" que los desarrolladores ensamblan para construir la funcionalidad completa de una aplicación Android. ¡Saber cómo y cuándo usarlos es clave para el desarrollo exitoso! 🏗️</p>
+            <div class="navigation-buttons">
+                <button class="main-button prev-btn" data-target-section="minimo-privilegio">◀️ Anterior</button>
+                <button class="main-button next-btn disabled-btn">Fin del Taller 🎉</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Taller Android Disruptivo. ¡Hecho con 💜 y 🤖!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
