@@ -311,3 +311,28 @@ body {
     transform: none !important; /* Asegura que no haya transformación al pasar el ratón */
     box-shadow: none !important; /* Asegura que no haya sombra al pasar el ratón */
 }
+
+/* Estilos para las imágenes de la demostración de la app */
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+    background-color: var(--bg-dark); /* Fondo gris claro para las imágenes */
+    padding: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.workshop-image {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    font-size: 0.9em;
+}
